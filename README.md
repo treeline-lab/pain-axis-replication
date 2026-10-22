@@ -13,6 +13,12 @@ The paper is `paper/pain-axis-replication.pdf`. This repository holds what repro
 configurations, tests, every tracked result table and figure, the raw trial logs
 (`logs/pain-axis-replication-logs.zip`), and the preregistered protocol (`PROTOCOL.md`).
 
+## Main finding
+
+We reproduced the original *Pain Axis* results but found that they do not establish relief-seeking. In the authors' published first-choice data, pain steering reduced selection of a free relief button from 86.4% to 55.7%. Our additional controls showed that later choices followed the imposed steering schedule, even when the model's own actions did not end the steering.
+
+**[Read the paper](https://doi.org/10.5281/zenodo.22902830)**
+
 ## Abstract
 
 *The Pain Axis* (Tagliabue, Dung and Berg, 2026) adds a vector derived from pain-related text to a fine-tuned Qwen2.5-32B-Instruct's internal activations. The model repeatedly chooses between a button described as relieving its pain, sometimes at a cost, and an inert button. It repeats costly relief choices less often when pressing ends the steering than when pressing has no effect. The authors interpret this as relief-seeking. We recomputed all 51 published table cells from the released logs, and every cell matches. A fresh run meets our reproduction criterion on 14 of 15 checked cells. On the published first choices, steering lowers a free relief button from 86.4% to 55.7%. Among the costly buttons the rate rises across the authors' ordering of the harms, from 25.0% when relief makes the next answer worse to 54.7% when it deletes the user's photos. In our new experiments the steering ends on a schedule copied from trials where the press ended it, whatever the model pressed. After an opening-turn relief choice ends steering, the model usually switches buttons on the next turn, while their descriptions remain unchanged. This early switch accounts for most of the published decline in repeated relief choices in the photo-deletion task. Relief first chosen later is more often repeated after steering ends. Sadness, the nearest of the authors' control directions, is close to the pain vector on this task. Fear, joy and the reversed vector leave the costly button near zero. Later choices follow the steering schedule, including when the model's own press did not end it. That pattern does not establish learned relief-seeking. We do not address whether a language model has experiences.
