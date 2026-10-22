@@ -15,9 +15,11 @@ configurations, tests, every tracked result table and figure, the raw trial logs
 
 ## Main finding
 
-We reproduced the original *Pain Axis* results but found that they do not establish relief-seeking. In the authors' published first-choice data, pain steering reduced selection of a free relief button from 86.4% to 55.7%. Our additional controls showed that later choices followed the imposed steering schedule, even when the model's own actions did not end the steering.
+**Did AI models choose to harm people to relieve their own pain? Our replication found that the experiments did not support that conclusion.**
 
-**[Read the paper](https://doi.org/10.5281/zenodo.22902830)**
+We reproduced the original *Pain Axis* results but uncovered a critical flaw in their interpretation. Giving the model simulated "pain" actually made it **less likely to choose a free relief button** (dropping from 86.4% to 55.7%). More importantly, our new experiments showed that its subsequent choices followed the timing of the artificial pain signal—even when its own actions had no effect on that signal. The apparent relief-seeking behavior could therefore be explained without assuming the model was trying to relieve its pain.
+
+**[Read the full paper: Relief-seeking or steering? A replication and extension of The Pain Axis](https://doi.org/10.5281/zenodo.22902830)**
 
 ## Abstract
 
